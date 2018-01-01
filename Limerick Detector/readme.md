@@ -1,3 +1,5 @@
+# Limerick Detector
+
 - Developed a python application that implements natural language processing techniques to determine whether a section of text is a limerick.
 - A limerick is considered to be a poem with the form AABBA, where the A lines rhyme with each other, the B lines rhyme with each other, and the A lines do not rhyme with the B lines.
 - The script identifies limericks using CMU's dictionary of word pronunciations comprising of over 134,000 words.
