@@ -1,0 +1,259 @@
+C:\Users\Harshith Guru Prasad\Desktop\NLP_HW6>python main.py -T crf -e data/twitter_dev.ner data/twitter_dev_test.ner
+.. # train sents 1804
+.. # data/twitter_dev.ner sents 590
+.. # data/twitter_dev_test.ner sents 703
+Twitter data loaded.
+Classes: 21 ['B-company' 'B-facility' 'B-geo-loc' 'B-movie' 'B-musicartist' 'B-other'
+ 'B-person' 'B-product' 'B-sportsteam' 'B-tvshow' 'I-company' 'I-facility'
+ 'I-geo-loc' 'I-movie' 'I-musicartist' 'I-other' 'I-person' 'I-product'
+ 'I-sportsteam' 'I-tvshow' 'O']
+-- 0 features added.
+-- 1000 features added.
+-- 2000 features added.
+-- 3000 features added.
+-- 4000 features added.
+-- 5000 features added.
+-- 6000 features added.
+-- 7000 features added.
+-- 8000 features added.
+-- 9000 features added.
+-- 10000 features added.
+-- 11000 features added.
+-- 12000 features added.
+-- 13000 features added.
+-- 14000 features added.
+-- 15000 features added.
+-- 16000 features added.
+-- 17000 features added.
+-- 18000 features added.
+-- 19000 features added.
+-- 20000 features added.
+-- 21000 features added.
+-- 22000 features added.
+-- 23000 features added.
+-- 24000 features added.
+-- 25000 features added.
+-- 26000 features added.
+-- 27000 features added.
+-- 28000 features added.
+-- 29000 features added.
+-- 30000 features added.
+-- 31000 features added.
+-- 32000 features added.
+-- 33000 features added.
+-- 34000 features added.
+-- 35000 features added.
+-- 36000 features added.
+-- 37000 features added.
+-- 38000 features added.
+-- 39000 features added.
+-- 40000 features added.
+-- 41000 features added.
+-- 42000 features added.
+-- 43000 features added.
+-- 44000 features added.
+-- 45000 features added.
+1804 45376
+Number of weights 953379
+Starting training
+iteration 0
+avg loss: 0.083877 w: [[ 2. -1.  0. ...,  0.  0.  0.]]
+effective learning rate: 1.000000
+iteration 1
+avg loss: 0.064182 w: [[ 3. -1.  1. ...,  0.  0.  0.]]
+effective learning rate: 1.000000
+iteration 2
+avg loss: 0.054105 w: [[ 4.  1.  1. ...,  0.  0.  0.]]
+effective learning rate: 1.000000
+iteration 3
+avg loss: 0.045546 w: [[ 3.  1.  1. ...,  0.  0.  0.]]
+effective learning rate: 1.000000
+iteration 4
+avg loss: 0.033064 w: [[ 4.  1.  1. ...,  0.  0.  0.]]
+effective learning rate: 1.000000
+iteration 5
+avg loss: 0.019524 w: [[ 5.  2.  1. ...,  0.  0.  0.]]
+effective learning rate: 1.000000
+iteration 6
+avg loss: 0.014714 w: [[ 5.  1.  3. ...,  0.  0.  0.]]
+effective learning rate: 1.000000
+iteration 7
+avg loss: 0.013913 w: [[ 4.  3.  3. ...,  0.  0.  0.]]
+effective learning rate: 1.000000
+iteration 8
+avg loss: 0.012968 w: [[ 5.  2.  3. ...,  0.  0.  0.]]
+effective learning rate: 1.000000
+iteration 9
+avg loss: 0.007987 w: [[ 5.  2.  2. ...,  0.  0.  0.]]
+effective learning rate: 1.000000
+iteration 10
+avg loss: 0.004666 w: [[ 5.  1.  2. ...,  0.  0.  0.]]
+effective learning rate: 1.000000
+iteration 11
+avg loss: 0.011508 w: [[ 4.  2.  3. ...,  0.  0.  0.]]
+effective learning rate: 1.000000
+iteration 12
+avg loss: 0.007386 w: [[ 3.  2.  2. ...,  0.  0.  0.]]
+effective learning rate: 1.000000
+iteration 13
+avg loss: 0.007100 w: [[ 4.  2.  2. ...,  0.  0.  0.]]
+effective learning rate: 1.000000
+iteration 14
+avg loss: 0.006813 w: [[ 5.  2.  2. ...,  0.  0.  0.]]
+effective learning rate: 1.000000
+iteration 15
+avg loss: 0.003120 w: [[ 4.  2.  3. ...,  0.  0.  0.]]
+effective learning rate: 1.000000
+iteration 16
+avg loss: 0.003922 w: [[ 5.  2.  3. ...,  0.  0.  0.]]
+effective learning rate: 1.000000
+iteration 17
+avg loss: 0.006126 w: [[ 5.  2.  3. ...,  0.  0.  0.]]
+effective learning rate: 1.000000
+iteration 18
+avg loss: 0.002376 w: [[ 5.  3.  3. ...,  0.  0.  0.]]
+effective learning rate: 1.000000
+iteration 19
+avg loss: 0.002548 w: [[ 5.  3.  3. ...,  0.  0.  0.]]
+effective learning rate: 1.000000
+iteration 20
+avg loss: 0.003034 w: [[ 5.  3.  3. ...,  0.  0.  0.]]
+effective learning rate: 1.000000
+iteration 21
+avg loss: 0.002290 w: [[ 5.  3.  3. ...,  0.  0.  0.]]
+effective learning rate: 1.000000
+iteration 22
+avg loss: 0.001889 w: [[ 4.  3.  3. ...,  0.  0.  0.]]
+effective learning rate: 1.000000
+iteration 23
+avg loss: 0.001832 w: [[ 4.  3.  3. ...,  0.  0.  0.]]
+effective learning rate: 1.000000
+iteration 24
+avg loss: 0.001775 w: [[ 5.  3.  3. ...,  0.  0.  0.]]
+effective learning rate: 1.000000
+### Train evaluation; writing to ./twitter_train.ner.pred
+Token-wise accuracy 99.7767090347
+Token-wise F1 (macro) 98.4241374484
+Token-wise F1 (micro) 99.7767090347
+Sentence-wise accuracy 97.0620842572
+               precision    recall  f1-score   support
+
+    B-company       0.98      0.96      0.97       135
+   B-facility       1.00      0.97      0.99        76
+    B-geo-loc       1.00      0.95      0.98       199
+      B-movie       1.00      1.00      1.00        27
+B-musicartist       1.00      1.00      1.00        42
+      B-other       0.99      0.93      0.96       162
+     B-person       1.00      0.97      0.99       341
+    B-product       1.00      0.92      0.96        78
+ B-sportsteam       1.00      1.00      1.00        40
+     B-tvshow       1.00      1.00      1.00        23
+    I-company       0.97      1.00      0.98        29
+   I-facility       1.00      0.96      0.98        76
+    I-geo-loc       1.00      0.97      0.99        35
+      I-movie       1.00      1.00      1.00        35
+I-musicartist       1.00      1.00      1.00        46
+      I-other       0.99      0.94      0.96       239
+     I-person       1.00      0.99      1.00       154
+    I-product       1.00      0.91      0.95        64
+ I-sportsteam       1.00      0.95      0.97        19
+     I-tvshow       1.00      1.00      1.00        21
+            O       1.00      1.00      1.00     33091
+
+  avg / total       1.00      1.00      1.00     34932
+
+### evaluation of data/twitter_dev.ner; writing to ./twitter_dev.ner.pred
+Token-wise accuracy 95.7701308832
+Token-wise F1 (macro) 29.5648858833
+Token-wise F1 (micro) 95.7701308832
+Sentence-wise accuracy 68.6440677966
+               precision    recall  f1-score   support
+
+    B-company       0.88      0.39      0.54        36
+   B-facility       0.57      0.43      0.49        28
+    B-geo-loc       0.70      0.36      0.48        77
+      B-movie       0.00      0.00      0.00         7
+B-musicartist       0.50      0.08      0.13        13
+      B-other       0.62      0.13      0.21        63
+     B-person       0.62      0.35      0.45       108
+    B-product       0.60      0.16      0.25        19
+ B-sportsteam       0.50      0.09      0.15        11
+     B-tvshow       0.50      0.18      0.27        11
+    I-company       0.00      0.00      0.00         7
+   I-facility       0.65      0.45      0.53        29
+    I-geo-loc       0.50      0.14      0.22        14
+      I-movie       0.00      0.00      0.00        11
+I-musicartist       1.00      0.07      0.12        15
+      I-other       0.65      0.16      0.26        81
+     I-person       0.58      0.34      0.43        61
+    I-product       0.80      0.25      0.38        16
+ I-sportsteam       0.00      0.00      0.00         4
+     I-tvshow       0.67      0.20      0.31        10
+            O       0.96      1.00      0.98     10916
+
+  avg / total       0.95      0.96      0.95     11537
+
+### evaluation of data/twitter_dev_test.ner; writing to ./twitter_dev_test.ner.pred
+Token-wise accuracy 91.3070392642
+Token-wise F1 (macro) 17.9817691763
+Token-wise F1 (micro) 91.3070392642
+Sentence-wise accuracy 50.4978662873
+               precision    recall  f1-score   support
+
+    B-company       0.82      0.13      0.22       109
+   B-facility       0.55      0.37      0.44        46
+    B-geo-loc       0.77      0.39      0.52       159
+      B-movie       0.00      0.00      0.00         4
+B-musicartist       0.00      0.00      0.00        33
+      B-other       0.14      0.02      0.03       118
+     B-person       0.21      0.16      0.18        96
+    B-product       0.20      0.02      0.04        44
+ B-sportsteam       0.00      0.00      0.00        31
+     B-tvshow       0.00      0.00      0.00         4
+    I-company       0.67      0.08      0.14        26
+   I-facility       0.58      0.25      0.35        60
+    I-geo-loc       0.81      0.46      0.59        37
+      I-movie       0.00      0.00      0.00        10
+I-musicartist       0.00      0.00      0.00        15
+      I-other       0.41      0.06      0.10       123
+     I-person       0.28      0.17      0.21        58
+    I-product       0.00      0.00      0.00        88
+ I-sportsteam       0.00      0.00      0.00         7
+     I-tvshow       0.00      0.00      0.00         9
+            O       0.93      0.99      0.96     10231
+
+  avg / total       0.88      0.91      0.89     11308
+
+C:\Users\Harshith Guru Prasad\Desktop\NLP_HW6>perl data/conlleval.pl -d
+ \t < twitter_dev.ner.pred
+processed 11537 tokens with 373 phrases; found: 165 phrases; correct: 1
+00.
+accuracy:  95.77%; precision:  60.61%; recall:  26.81%; FB1:  37.17
+          company: precision:  87.50%; recall:  38.89%; FB1:  53.85  16
+
+         facility: precision:  47.62%; recall:  35.71%; FB1:  40.82  21
+
+          geo-loc: precision:  70.00%; recall:  36.36%; FB1:  47.86  40
+
+            movie: precision:   0.00%; recall:   0.00%; FB1:   0.00  1
+      musicartist: precision:   0.00%; recall:   0.00%; FB1:   0.00  2
+            other: precision:  53.85%; recall:  11.11%; FB1:  18.42  13
+           person: precision:  57.38%; recall:  32.41%; FB1:  41.42  61
+          product: precision:  60.00%; recall:  15.79%; FB1:  25.00  5
+       sportsteam: precision:  50.00%; recall:   9.09%; FB1:  15.38  2
+           tvshow: precision:  50.00%; recall:  18.18%; FB1:  26.67  4
+
+C:\Users\Harshith Guru Prasad\Desktop\NLP_HW6>perl data/conlleval.pl -d \t < twitter_dev
+_test.ner.pred
+processed 11308 tokens with 644 phrases; found: 220 phrases; correct: 103.
+accuracy:  91.31%; precision:  46.82%; recall:  15.99%; FB1:  23.84
+          company: precision:  82.35%; recall:  12.84%; FB1:  22.22  17
+         facility: precision:  38.71%; recall:  26.09%; FB1:  31.17  31
+          geo-loc: precision:  72.84%; recall:  37.11%; FB1:  49.17  81
+            movie: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+      musicartist: precision:   0.00%; recall:   0.00%; FB1:   0.00  1
+            other: precision:  14.29%; recall:   1.69%; FB1:   3.03  14
+           person: precision:  21.43%; recall:  15.62%; FB1:  18.07  70
+          product: precision:  20.00%; recall:   2.27%; FB1:   4.08  5
+       sportsteam: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+           tvshow: precision:   0.00%; recall:   0.00%; FB1:   0.00  1
