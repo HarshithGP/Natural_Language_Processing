@@ -1,0 +1,6 @@
+readme - csci544 NLP HW7
+
+Steps to Execute
+
+python evaluate.py > eval.out
+python compare-with-human-evaluation.py < eval.out
