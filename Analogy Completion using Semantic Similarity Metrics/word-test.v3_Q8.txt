@@ -1,0 +1,12 @@
+: verb-present-continuous
+eat eating drink drinking
+laugh laughing cry crying
+drive driving ride riding
+: singular-plural
+man men woman women
+night nights dream dreams
+fan fans follower followers
+: Nation-language
+england english france french 
+spain spanish germany german 
+france french italy italian 
