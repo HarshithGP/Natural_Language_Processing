@@ -1,0 +1,49 @@
+CSCI 544 - Natural Language Processing
+HW3 | Fall 2017
+Feature Engineering : Explanation
+
+To improve the performance and enhance the accuracy of nltk's Naive Baiyes Classifier,
+I implemented the following strategies to preprocess the text data and engineer new features from it.
+
+1. Used nltk's snowball stemmer instead of the default morphy stemmer and improved the accuracy 
+   of the model by 2%. Compared the relative performance of the Porter Stemmer as well and found the 
+   snowball stemmer to produce the best results.
+
+2. Feature Used - No_of_Words: stores the count of no of words in each line read from train.tsv using len(split(line))
+   This feature improved the accuracy of the classifier by 6-7%. Decided to use this feature after observing 
+   the train.tsv file where Shakespeare's lines appeared to be longer in length than Broker's lines.
+
+3. Feature Used - Bigrams: count of commonly occurring 2 word sequences as detected in each line
+   by nltk's ngrams library - ngrams(text.split(), n=2).
+   Improved the accuracy of the classifier by 2-3%. Tried using Trigrams and Unigrams as well but did not
+   find them to significantly improve the accuracy of the classifer and decided against using them.
+
+4. Eliminated commonly occuring stopwords as found in the nltk.corpus - stopwords list. Improved the accuracy by
+   1-2% by not adding common stopwords into the dictionary of features.
+
+5. Feature Used: S_H and E_B - preprocessed and analysed the dataset train.tsv to determine the most commonly used words by the two authors. Incremented the count by 2 in the feature S_H if the word was present in Shakespeare's list of frequent words and in feature E_B for Broker if the word was present in Broker's list of frquent words. Decremented the count by 1 if the word was present in the common list. Improved accuracy by 5-6%.
+
+6. Feature Tried: Part of Speech Tagging - tried incrementing the count for each part of speech when encountered in the line using nltk's pos_tag(). Decided against using it as it not improve the classifier's accuracy as expected and degraded the training performance. 
+
+7. Tried Cross validation: Tried to split the train.tsv into various train/test subsets so as to choose the train dataset with the best features and prevent overfitting. Achieved an average accuracy of 95% on the different test sets after training on the best set of features.
+
+8. Used classifier.most_informative_features() to determine the best features that enhanced the accuracy of the model.
+
+9. Tried improving accuracy by using features for uppercase characters and punctuation marks but did not find them to improve the perfomance of the model. Used the feature numChar to count the number of digits used by the author in their work.
+
+10.Tried using the innovative feature of using CMU's dictionary of word pronunciations. The idea was to store the count of the number 	 of words who pronunciations was present in the dictionary to identify legacy(old) and contemporary(modern) english words. Did not include the feature on account of timeout concerns.
+
+11. Tried using scikit learn(sklearn)'s implementation of Naive Bayes. Decided to stick to NLTK as the performance was better considering all the features used were derived from nltk libraries.
+
+NLTK - Naive Bayes - Bag of Words Assumption 
+
+Accuracies on Train.tsv - development data
+1. Using the Snowball stemmer - 79.3997
+2. Using no of words - 85.8117
+3. Using bigrams - 87.4488
+4. Ignoring Stopwords - 89.4952
+5. Parts of Speech Tagging - 89.0858
+6. Frequent words from train.tsv - 95.9
+
+NO EXTERNAL RESOURCES USED
+Generated all features from train.tsv text content
