@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+set -e
+
+# don't change these 4 lines
+SCRIPTDIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+TRAINING=$1;
+INPUT=$2;
+OUTPUT=$3;
+
+# you should change the lines below
+
+# preprocess the training data to binarize
+python $SCRIPTDIR/preprocess.py $TRAINING > train.trees.pre
+
+# preprocess the binarized trees to replace words having frequency < 2 with <unk>
+python $SCRIPTDIR/unknown.py train.trees.pre > train.trees.pre.unk 2> MultiWord.txt
+
+# Create a pCFG using the trees
+python $SCRIPTDIR/Build_pCFG.py -i train.trees.pre.unk -o grammar.pCFG
+
+# Run the parser on dev.strings using 
+python $SCRIPTDIR/ckyParser.py -i $INPUT -g grammar.pcfg -o dev.parses
+
+# Post process the parsed sentences for evaluation
+python $SCRIPTDIR/postprocess.py dev.parses > $OUTPUT

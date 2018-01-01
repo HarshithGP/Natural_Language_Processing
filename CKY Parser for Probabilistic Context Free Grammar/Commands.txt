@@ -1,0 +1,11 @@
+python preprocess.py train.trees
+
+python unknown.py train.trees.pre 
+
+python Build_pCFG.py -i train.trees.pre.unk -o grammar.pcfg
+
+python ckyParser.py -i dev.strings -g grammar.pcfg -o dev.parses
+
+cat dev.parses | python postprocess.py > dev.parses.post
+
+python evalb.py dev.parses.post dev.trees
